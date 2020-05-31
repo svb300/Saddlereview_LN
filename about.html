@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport"  content="width=device-width, intial-scale=1.0">
+<meta charset="utf-8">
+<meta name="description" content="Saddle Reviews">
+<meta name="keywords" content="Horses,Saddle,Billy Cook,Equestrian, Saddle Reviews, Western Riding, English Riding">
+<meta name="author" content="Lindsay Neher">
+
+<title>LN SADDLE REVIEWS-ABOUT</title>
+
+<!--Warning Icon Stylesheet-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!--Header-->
+
+<div class="headercontainer">
+ 
+ <hr>
+ <p class="p1">ABOUT ME</p>
+ <hr> 
+ 
+ <!--Nav-->
+ 
+ <div class="navcontainer">
+
+<ul>
+  <li><a href="index.html"><b>|Home|</b></a></li>
+  <li><a href="contact.html"><b>|Contact|</b></a></li>
+  <li><a href="about.html"><b>|About|</b></a></li>  
+  <li><a href="western.html"><b>|Western Saddles|</b></a></li>
+  <li><a href="english.html"><b>|English Saddles|</b></a></li>
+</ul>
+	<hr>
+	
+</div>
+</div>
+
+<!--Background Containers -->
+<div class="container1">
+<div>
+<h3> Who am I and what is this page?</h3>
+<p> Hello! My name is Lindsay Neher, I'm 16 years old and I live in Idaho. I built this website for a school project, and I decided to incorporate my passion into it. I love to do many activites that involve horses. I compete in both Western and English events. I love to barrel race, goat tie, pole bend, train mustangs, and compete in jumpers. I have been riding and training horses for 8 years, I plan on doing it for many more!</p>
+</div>
+<div class="container2">
+
+<!--Float Containers-->
+
+<!--right container-->
+
+<div class="aboutmecontainer1">
+
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="images/breakerhack.jpg" style="width:350px" alt="A picture of me hacking on my horse">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/breakerrib.jpg" style="width:315px" alt="A picture of my horse with ribbons">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/eventjul.jpg" style="width:320px" alt="A picture of me racing on my horse">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+</div>
+
+<!--Left Container-->
+<div class="aboutmecontainer2">
+
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="images/me2.jpg" style="width:315px" alt="A picture of me with a mustang filly I trained">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/me1.jpg" style="width:315px" alt="A picture of me tacking up my horse">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/me3.jpg" style="width:300px" alt="A picture of me with my mare">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+
+
+</div>
+<!---Background Container End-->
+</div>
+</div>
+
+<!--Java for Slideshows-->
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+
+<!--Footer-->
+
+<footer class="container1">
+
+<i style="font-size:24px" class="fa">&#xf071;</i>  
+<strong> DISCLAIMER: </strong> <p>This website was made for a school project the information displayed is not professional, and may not be completly accurate. </p>
+
+</footer>
+</body>
+</html>
